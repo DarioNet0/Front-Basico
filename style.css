@@ -100,3 +100,8 @@ body {
     height: 32px;
 
 }
+/*modificando frase do rodapé*/
+span {
+    color: white;
+    margin-top: 32px;
+}
