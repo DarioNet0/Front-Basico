@@ -8,3 +8,8 @@
   function linkedinlink() {
     window.location.href = "https://www.linkedin.com/in/d%C3%A1rio-neto-82b62b253/"
   } 
+
+  function toggleMode() {
+    const html = document.documentElement
+    html.classList.toggle('light')
+  }

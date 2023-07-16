@@ -1,14 +1,44 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
+:root {
+    --background-color: linear-gradient(to bottom, rgb(0, 0, 0), rgb(52, 3, 97));
+    --profile-color: white;
+    --switch-icon: url(./Assets/dark-switch.png) no-repeat center;
+    --switch-border-shadow:0 0 10px #fdfdfd;
+    --switch-background: rgb(0, 0, 0);
+    --switch-background-hover: rgba(143, 141, 141, 0.404);
+    --multi-button-background:  rgba(160, 157, 157, 0.26);
+    --multi-button-background-hover: rgba(58, 54, 54, 0.374);
+    --multi-button-border: 1px solid rgb(255, 255, 255);
+    --multi-button-color: white;
+    --social-icons-color: white;
+    --social-icons-background-color-hover: rgba(110, 108, 108, 0.74);
+    --bottom-text: white;
+
+}
+.light {
+    --background-color: linear-gradient(to bottom, rgb(45, 185, 148), rgb(11, 144, 171));
+    --profile-color: black;
+    --switch-icon: url(./Assets/white-switch.png) no-repeat center;
+    --switch-border-shadow:0 0 10px black;;
+    --switch-background: rgb(253, 253, 253);
+    --switch-background-hover: rgba(90, 86, 86, 0.404);
+    --multi-button-background: rgba(54, 54, 54, 0.26);
+    --multi-button-background-hover: rgba(150, 149, 149, 0.374);
+    --multi-button-border: 1px solid rgb(0, 0, 0);
+    --multi-button-color: black;
+    --social-icons-color: black;
+    --social-icons-background-color-hover: rgba(220, 218, 218, 0.74);
+    --bottom-text: black;
+
+
+}
 body {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(52, 3, 97));
+    background-image: var(--background-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-.light {
-    --light-switch: 
 }
 #content {
     display: flex;
@@ -20,11 +50,10 @@ body {
 #profile-picture {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--profile-color);
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
-    
+    margin-top: 8px;  
 }
 #profile-picture img {
     width: 150px;
@@ -37,12 +66,11 @@ body {
     margin-bottom: 8px;
 }
 #switch button {
-    background: url(./Assets/dark-switch.png) no-repeat center;
-    background-color: rgb(255, 255, 255);
+    background: var(--switch-icon);
+    background-color: var(--switch-background);
     border: none;
     width: 32px;
     height: 32px;
-    border: 1px solid black;
     border-radius: 50%;
     transition: 0.3s;
 }
@@ -50,8 +78,8 @@ body {
     cursor: pointer;
     border-radius: 16px;
     width: 64px;
-    background-color: white;
-    box-shadow: 0 0 10px#fdfdfd;
+    background-color: var(--switch-background-hover);
+    box-shadow: var(--switch-border-shadow);
 }
 /*Criando Botões Multifuncionais*/
 #multi-buttons {
@@ -61,18 +89,18 @@ body {
     gap: 16px;
 }
 .multi-button{
-    background-color: rgba(160, 157, 157, 0.26);
-    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--multi-button-background);
+    border: var(--multi-button-border);
     border-radius: 8px;
     padding: 16px 24px;
     width: 300px;
     font-size: 18px;
-    color: white;
+    color: var(--multi-button-color);
     transition: 0.2s;
     backdrop-filter: blur(3px);
 }
 .multi-button:hover {
-    background-color: rgba(58, 54, 54, 0.374);
+    background-color: var(--multi-button-background-hover);
     cursor: pointer;
     scale: 1.1;
 }
@@ -88,10 +116,10 @@ body {
     padding-bottom: 4px;
     border: none;
     background: none;
-    color: white;
+    color: var(--social-icons-color);
 }
 .social-icons:hover {
-    background: rgba(110, 108, 108, 0.74);
+    background: var(--social-icons-background-color-hover);
     cursor: pointer;
     backdrop-filter: blur(3px);
 }
@@ -102,6 +130,6 @@ body {
 }
 /*modificando frase do rodapé*/
 span {
-    color: white;
+    color: var(--bottom-text);
     margin-top: 32px;
 }
