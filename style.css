@@ -1,0 +1,102 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(52, 3, 97));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.light {
+    --light-switch: 
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Configurando foto do Perfil*/
+#profile-picture {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    
+}
+#profile-picture img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 8px;
+}
+/*Criando botão que alterna entre temas*/
+#switch  {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#switch button {
+    background: url(./Assets/dark-switch.png) no-repeat center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#switch button:hover {
+    cursor: pointer;
+    border-radius: 16px;
+    width: 64px;
+    background-color: white;
+    box-shadow: 0 0 10px#fdfdfd;
+}
+/*Criando Botões Multifuncionais*/
+#multi-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 16px;
+}
+.multi-button{
+    background-color: rgba(160, 157, 157, 0.26);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: 300px;
+    font-size: 18px;
+    color: white;
+    transition: 0.2s;
+    backdrop-filter: blur(3px);
+}
+.multi-button:hover {
+    background-color: rgba(58, 54, 54, 0.374);
+    cursor: pointer;
+    scale: 1.1;
+}
+/*Criando Link para redes socias*/
+#social-buttons {
+    display: flex;
+    margin-top: 16px;
+    gap: 16px;
+}
+.social-icons {
+    border-radius: 50%;
+    padding: 8px;
+    padding-bottom: 4px;
+    border: none;
+    background: none;
+    color: white;
+}
+.social-icons:hover {
+    background: rgba(110, 108, 108, 0.74);
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+}
+.social-icons ion-icon {
+    width: 32px;
+    height: 32px;
+
+}
