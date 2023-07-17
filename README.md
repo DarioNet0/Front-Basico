@@ -1,7 +1,7 @@
 
 ### Front End Básico 🖌️🎨
 
-  Este projeto reúne conceitos básicos de front-end 
+  Este repositório reúne conceitos básicos de front-end 
   
   ### Tecnologias Utilizadas 💻
 <div style="display: inline_block"><br>
